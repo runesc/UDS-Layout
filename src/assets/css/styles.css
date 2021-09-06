@@ -1,0 +1,90 @@
+
+html,body,#root{
+    height: 100%;
+}
+
+.w-80{
+    width: 80% !important;
+}
+
+/** Navbar styles **/
+img.app-logo{
+    width: 28%;
+}
+li.nav-item{
+    overflow: auto;
+    white-space: nowrap;
+}
+a.nav-link {
+    color: #03005e !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a.nav-link.active{
+    color: #00b82e !important;
+}
+
+/** Header **/
+header{
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100% - 11%);
+}
+.header-text{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translate(0%,-45%);
+}
+
+.header-text h1{
+    color: white;
+    font-family: 'Fugaz One';
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 36px;
+}
+
+/** Info section **/
+
+.text-area span{
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.info-container{
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+img.w-80{
+    margin-left: 2em;
+}
+
+/** Cards section **/
+.cards{
+    background-color: #00b82e;
+    padding: 3em;
+}
+.card{
+    background: none;
+    border: none;
+}
+.card-title{
+    color: #03005e !important;
+    font-family: 'Fugaz One';
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+/** Ventajas **/
+.ventajas{
+    height:85vh;
+}
+.image-container{
+    background-image: url(../img/ventajas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
