@@ -2,11 +2,20 @@
 html,body,#root{
     height: 100%;
 }
+.green-text{
+    color: #00b82e !important;
+}
+.phone-icon{
+    font-size: 30px;
+    margin-right: .5em;
+}
 
 .w-80{
     width: 80% !important;
 }
-
+.w-70{
+    width: 70% !important;
+}
 /** Navbar styles **/
 img.app-logo{
     width: 28%;
@@ -26,11 +35,11 @@ a.nav-link.active{
 
 /** Header **/
 header{
-    background-image: url('../img/header-bg.jpg');
+    background-image: url(https://ik.imagekit.io/kummiktgaiq/UDS/header-bg_WBYa9WN15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: calc(100% - 11%);
+    height: 100%;
 }
 .header-text{
     margin: 0;
@@ -84,7 +93,151 @@ img.w-80{
     height:85vh;
 }
 .image-container{
-    background-image: url(../img/ventajas.jpg);
+    background-image: url(https://ik.imagekit.io/kummiktgaiq/UDS/ventajas__Y9pjaEQ3B.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+}
+
+/** Beca apicar **/
+.apply{
+    max-height: 50vh;
+}
+.apply-bg, .apply-bg-2{
+    background-image: url(https://ik.imagekit.io/kummiktgaiq/UDS/beca_gUWWVTGH6.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.apply-bg-2{
+    background-image: url(https://ik.imagekit.io/kummiktgaiq/UDS/beca-2_rnTudhu4d0i.jpg);
+    background-position: center;
+}
+.bg-filter{
+    height: 100%;
+    background-color: rgb(0,0,0,0.4);
+}
+.apply-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+}
+.apply-subtitle{
+    font-size: 18px;
+}
+.apply-message{
+    position: relative;
+    top: 30%;
+    transform: translate(0, -30%);
+}
+.btn-pill{
+    padding: 1.2rem;
+    font-size: 28px;
+    color: #00b82e;
+    background: white !important;
+    border: 3px solid white;
+}
+.btn-pill:hover{
+    background: transparent !important;
+    border: 3px solid white;
+    color: white;
+}
+
+/** Footer area **/
+
+footer{
+    background-color: #212121;
+    height:30vh;
+}
+ul.social-list {
+    padding: 0;
+    text-align: center;
+}
+.social-list li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 1.7rem 0 0;
+}
+p.credits.text-white.text-center {
+    background: #212121;
+    padding-bottom: 1em;
+}
+
+.careeers{
+    background-color: #010C38;
+}
+a.green-link {
+    color: #02D41B;
+    font-size: 18px;
+    font-weight: bold;
+}
+.page-header{
+    min-height: 26vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page-header h1 {
+    color: white;
+    font-size: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*! Becas **/
+.scohlariship-apply{
+    font-family: 'Fugaz One';
+    text-transform: uppercase;
+}
+
+
+/**! media queries **/
+@media (max-width: 992px) {
+    .navbar-brand{
+        width:84%;
+    }
+    img.w-80.womens-image {
+        padding-top: 3em;
+    }
+    .container, .container-sm {
+        max-width: 100% !important;
+    }
+    .w-50.text-center.apply-container {
+        width: 100% !important;
+    }
+    .btn-pill{
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px){
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        position: relative;
+        z-index: 10;
+    }
+    .navbar-brand{
+        width: 75%;
+    }
+    h1.card-title{
+        font-size: 1.65rem;
+    }
+    footer{
+        height:auto;
+    }
+    .header-text.w-50.text-center{
+        padding-left: .5em;
+        width: 80% !important;
+    }
+    .page-header h1 {
+        color: white;
+        font-size: 3rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .col-12-w-100{
+        width: 100% !important;
+    }
+    iframe{
+        width: 95% !important;
+    }
+    header{
+        background-image: url(https://ik.imagekit.io/kummiktgaiq/UDS/student_4C2p2nc4v.jpg?updatedAt=1631034205738);
+    }
 }

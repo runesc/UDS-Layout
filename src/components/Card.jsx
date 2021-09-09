@@ -1,11 +1,11 @@
 
 const Card = props => {
     return(
-        <div class="card" >
-            <div class="card-body text-center">
-                <h1 class="card-title">{props.title}</h1>
+        <div className="card pb-3" >
+            <div className="card-body text-center">
+                <h1 className="card-title">{props.title}</h1>
             </div>
-            <img src={props.image} class="card-img-top" alt="photocard" />
+            <img src={props.image} className="card-img-top" alt="photocard" />
         </div>
     )
 }

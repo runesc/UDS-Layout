@@ -1,33 +1,32 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-
+import { Link } from 'react-router-dom'
 import Logo from '@images/logo.png';
 
 const Navbar = props => {
 	return(
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-		<img src={Logo} alt="UDS Logo" class="d-inline-block align-text-top app-logo"/>
-	</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container">
+    <Link className="navbar-brand" to="/">
+		  <img src={Logo} alt="UDS Logo" className="d-inline-block align-text-top app-logo"/>
+    </Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/">Nosotros</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Oferta Educativa</a>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Oferta-Educativa">Oferta Educativa</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Becas</a>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Becas">Becas</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Admisiones</a>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Admisiones">Admisiones</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Contacto">Contacto</Link>
         </li>
       </ul>
     </div>
